@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48dip"
+    android:orientation="horizontal"
+    android:background="#7f000000">
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_1"
+            android:background="@drawable/datian_selector"
+            android:layout_gravity="center"
+            android:layout_width="32dip"
+            android:layout_height="24dip" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/datian1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:textSize="8dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_2"
+            android:background="@drawable/datian2_selector"
+            android:layout_gravity="center"
+            android:layout_width="32dip"
+            android:layout_height="24dip" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/datian2"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="8dip"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL3"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_3"
+            android:background="@drawable/cloud_selector"
+            android:layout_gravity="center"
+            android:layout_width="32dip"
+            android:layout_height="24dip" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cloud"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="8dip"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

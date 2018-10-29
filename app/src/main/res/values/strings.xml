@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">大田环境监测系统</string>
+    <string name="refresh">刷新</string>
+    <string name="cloud">气象站</string>
+    <string name="datian1">一号田间参数</string>
+    <string name="datian2">二号田间参数</string>
+</resources>

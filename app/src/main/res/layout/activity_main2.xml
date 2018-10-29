@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/beijing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="monospace"
+        android:text="溧水·白马"
+        android:gravity="center"
+        android:background="@drawable/selector"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/iv_refresh2"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:src="@drawable/refresh"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/tv_title2"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/selector3"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/shape1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二号监测站照片"
+            android:ems="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"/>
+
+        <ImageView
+            android:id="@+id/iv_display2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="240dp"
+            android:layout_height="180dp"
+            android:src="@drawable/datianpic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_display2"
+        android:layout_width="match_parent"
+        android:layout_height="240dip"
+        android:layout_above="@id/LL_footbar2"
+        android:orientation="vertical">
+
+        <!--第一行数据-->
+
+        <LinearLayout
+            android:id="@+id/LL_firstline2"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="监测站数据"
+                    android:textColor="@android:color/white"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="80dip"
+                android:background="@android:color/white"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="辐射度"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_ra2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="470W/㎡"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@android:color/white">
+        </View>
+
+        <!--第二行数据-->
+
+        <LinearLayout
+            android:id="@+id/LL_secondline2"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="空气温度"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="italic"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_at2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="26℃"
+                    android:gravity="end"
+                    android:textColor="@android:color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="80dip"
+                android:background="@android:color/white">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="空气湿度"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="italic"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tv_ah2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="71%"
+                    android:gravity="end"
+                    android:textColor="@android:color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@android:color/white"
+            >
+        </View>
+
+        <!--第三行数据-->
+
+        <LinearLayout
+            android:id="@+id/LL_thirdline2"
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="土壤温度"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="italic"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_st2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="22℃"
+                    android:gravity="end"
+                    android:textColor="@android:color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="80dip"
+                android:background="@android:color/white">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="土壤湿度"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tv_sh2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="20.6%"
+                    android:gravity="end"
+                    android:textColor="@android:color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_footbar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/activity_foolbar"></include>
+    </LinearLayout>
+
+</RelativeLayout>
