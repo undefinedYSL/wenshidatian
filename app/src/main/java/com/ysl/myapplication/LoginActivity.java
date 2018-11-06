@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.text.style.ImageSpan;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -15,6 +16,8 @@ import android.widget.Toast;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -26,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
 	private CheckBox checkBox;
 	private ImageView nameClear;
 	private ImageView passwordClear;
+	private CircleImageView testCIV;
 
 	//http通信,实验室沿用
 	private String service_LoginMessage;
@@ -67,6 +71,7 @@ public class LoginActivity extends AppCompatActivity {
 
 		EditTextClearTools.addClearListener(etUserName,nameClear);
 		EditTextClearTools.addClearListener(etPassword,passwordClear);
+		testCIV = (CircleImageView) findViewById(R.id.iv_icon);
 	}
 
 	public void click(View view) {

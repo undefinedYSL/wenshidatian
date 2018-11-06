@@ -10,4 +10,5 @@
     <color name="colorText">#797979</color>
     <color name="colorBackground">#F1F0F6</color>
     <color name="colorDefault">#FFFFFF</color>
+    <color name="black">#ff000000</color>
 </resources>
